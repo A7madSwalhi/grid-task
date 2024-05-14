@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container {
+    gap: 0.75%;
+    width: 100%;
+    padding: 1%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10% repeat(1, 1fr) 25%;
+    grid-template-areas:
+        "nav nav nav nav nav nav nav nav nav nav"
+        "main main main main main main main as as as"
+        "foot foot foot foot foot foot foot foot foot foot";
+}    
+
+header {
+    background-color: black;
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    background-color: orange;
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    background-color: green;
+    grid-area: as;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background-color: blue;
+    grid-area: foot;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
